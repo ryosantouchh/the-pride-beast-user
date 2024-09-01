@@ -16,5 +16,5 @@ func main() {
 	}
 
 	app := server.NewServerApp()
-	app.Start(":3001")
+	app.Start(config.Port)
 }
