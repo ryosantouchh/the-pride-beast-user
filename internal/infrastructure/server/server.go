@@ -2,20 +2,20 @@ package server
 
 import (
 	"github.com/gin-gonic/gin"
+	"gorm.io/gorm"
 )
 
 type Server struct {
 	app *gin.Engine
-	// db  *gorm.DB
+	db  *gorm.DB
 }
 
-// func NewServerApp(db *gorm.DB) *Server {
-func NewServerApp() *Server {
+func NewServerApp(db *gorm.DB) *Server {
 	ginApp := gin.Default()
 
 	return &Server{
 		app: ginApp,
-		// db:  db,
+		db:  db,
 	}
 }
 

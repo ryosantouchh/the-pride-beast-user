@@ -5,7 +5,7 @@ import (
 
 	"github.com/caarlos0/env/v11"
 	"github.com/ryosantouchh/the-pride-beast-user/internal/config"
-	"github.com/ryosantouchh/the-pride-beast-user/internal/domain/entity"
+	"github.com/ryosantouchh/the-pride-beast-user/internal/core/domain/entity"
 	"github.com/ryosantouchh/the-pride-beast-user/internal/infrastructure/database"
 )
 
